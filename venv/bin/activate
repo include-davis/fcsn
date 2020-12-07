@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/ben/Downloads/FCSN/Final-updated/venv"
+VIRTUAL_ENV="/Users/ben/Downloads/FCSN/fcsnapp/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
