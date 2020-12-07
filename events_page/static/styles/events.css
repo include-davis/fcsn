@@ -1,0 +1,60 @@
+#page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page h1 {
+    font-size: 48px;
+    line-height: 59px;
+}
+
+#page h2 {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+#content {
+    outline: 1px solid red;
+    width: 1070px;
+    position: relative;
+    top: 256px;
+}
+#content #title {
+    position: relative;
+    top: 0px;
+}
+
+#upcoming h2{
+    position: relative;
+    top: 52px;
+}
+
+#past {
+    position: relative;
+    top: 82px;
+}
+
+#past h2 {
+    position: relative;
+    top: 52px;
+}
+
+#events {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 54px;
+}
+
+.event-description {
+    width: 488px;
+    height: 262px;
+    text-align: center;
+    line-height: 37px;
+    background-color: pink;
+}

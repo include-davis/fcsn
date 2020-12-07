@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>FCSN Events</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/FCSNnavbar.css') }}>
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/FCSNfooter.css') }}>
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/style.css') }}>
+<!--        <link rel="stylesheet" href="../static/style.css">-->
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class= "home">
+            <div class= "nav-bar">
+                <div class= "Component1">
+                    <div class= "image">
+                        <img src= "{{ url_for('static', filename='fcsndavislogo (fb banner) 2.png') }}" alt="FCSN Davis Logo" >
+                        <div class= "links">
+                            <ul>
+                                <li><a href = "HomeURL">Home</a></li>
+                                <li><a href = "AboutUsURL">About Us</a></li>
+                                <li><a href = "/events">Events</a></li>
+                                <li><a href = "GetInvolvedURL">Get Involved</a></li>
+                                <li><a href = "ContactURL">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Events</h1>
+
+        <!-- Upcoming Events -->
+        <h2 style="top: 417px">Upcoming Events</h2>
+        
+        <div class="upcoming-events">
+            <img src="../static/images/FCSN After School Program Flyer.jpg" style="top: 512px;">
+            <p style="top:586px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+            <a href="#" id="button" style="top: 779px" class="sign-up-button">Sign Up</a>
+        </div>
+                
+        <!-- Past Events -->
+        <h2 style="top: 993px">Past Events</h2>
+
+        <div class="past-events">
+            <img src="../static/images/fcsn davis first meeting.png" style="top: 1088px;">
+            <p style="top: 1166px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+            varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+        </div>
+
+        <div class="past-events">
+            <img src="../static/images/fcsn davis 2nd meeting.png" style="top: 1461px;">
+            <p style="top: 1540px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+        </div>
+
+        <div class="past-events">
+            <img src="../static/images/game night social.jpg" style="top: 1834px;">
+            <p style="top: 1936px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+        </div>
+
+        <div class="past-events">
+            <img src="../static/images/FCSN Volunteer Training Instagram Post.png" style="top: 2300px">
+            <p style="top: 2379px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+        </div>
+
+        <div class="past-events">
+            <img src="../static/images/FCSN Thanksgiving After School Club Flyer.jpg" style="top: 2673px">
+            <p style="top: 2766px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+        </div>
+
+        <!-- Messages about eligibility or ineligibility -->
+        <div class="message">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <!-- Displays message confirming eligibility or ineligibility -->
+                    <div id="message">
+                    {% for category, message in messages %}
+                        <p><span style="color: red; font-size: 20px;">{{ category }}<br></span> {{ message }}</p>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+        </div>  
+
+        <!-- Popup for email form -->
+        <div class="email-popup">
+            <div class="popup-content">
+                <!-- Closes the popup -->
+                <div class="close">+</div>
+
+                <!-- Contents of Popout -->
+                <h2 style="width: 395px;">Check for event eligibility</h2>
+                <form action="{{ url_for('check_eligibility') }}" method="POST" name="check_email" onsubmit="return validEmail()">
+                    <input type="text" name="email" id="email" placeholder="Enter email here">
+                </form>
+            </div>
+        </div>
+
+        <!-- Message if user doesn't enter valid email -->
+        <div class="error-message">
+            <p><span style="color: red; font-weight: 600; font-size: 25px; line-height: 30px;">Email Invalid<br></span>Please enter a valid email address.</p>
+        </div>
+
+        <!-- footer -->
+        <div class="Group_46">
+            <div class= "Rectangle3"></div>
+            <div class = "Text">Friends of Children with Special Needs @ UC Davis</div>
+            <div class = "Frame7"></div>
+            <div class= "Frame8">
+                <img class="aggie" src="{{ url_for('static', filename='image 3.png') }}">
+                <img class="Instagram" src="{{ url_for('static', filename='image 2.png') }}" alt="Instagram Logo">
+                <img class="Facebook" src="{{ url_for('static', filename='image 1.png') }}">
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    // Each sign-up button will open a form for the user to enter their email
+    var sign_up_buttons = document.getElementsByClassName('sign-up-button');
+    function promptEmail() {
+        document.querySelector('.email-popup').style.display = "flex";
+    };
+
+    for (i = 0; i < sign_up_buttons.length; i++) {
+        sign_up_buttons[i].addEventListener("click", promptEmail);
+    }
+
+    // Returns true if valid input and false if invalid to prevent check_eligibility 
+    // from processing invalid email
+    function validEmail()
+    {
+        var input = document.check_email.email.value;
+
+        const regex = RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+
+        // Displays error message if invalid input for email
+        if(!regex.test(input))  {
+            document.querySelector('.error-message').style.display = 'flex';
+            return false; // Prevents an invalid email from entering database
+        }
+
+        // Processes email to database
+        return true;
+    }
+
+    // Closes popup email eligibility form
+    document.querySelector('.close').addEventListener('click', 
+    function() {
+        document.querySelector('.email-popup').style.display = 'none';
+        document.querySelector('.error-message').style.display = 'none';
+    });
+</script>
