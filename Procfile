@@ -1,1 +1,1 @@
-web: gunicorn fcsnapp:fcsnapp
+web: gunicorn app:app
