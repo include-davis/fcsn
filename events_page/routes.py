@@ -24,7 +24,7 @@ def add_volunteer():
     return render_template('add_volunteer.html', title='Add Volunteer', form=form)
 
 @app.route("/", methods=['GET', 'POST'])
-@app.route("home",methods=['GET', 'POST'])
+@app.route("/home",methods=['GET', 'POST'])
 def home():
     return render_template('home.html')
 
