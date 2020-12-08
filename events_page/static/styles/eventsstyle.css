@@ -32,8 +32,7 @@ h2 {
 }
 
 body {
-    position: relative;
-    margin: auto;
+    position: absolute;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
