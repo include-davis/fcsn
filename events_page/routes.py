@@ -37,7 +37,7 @@ def board():
 def contact():
     return render_template('contact.html')
 @app.route("/getinvoled",methods=['GET', 'POST'])
-def getinvoled():
+def getinvolved():
     return render_template('home.html')
 
 @app.route("/events", methods=['GET', 'POST'])
