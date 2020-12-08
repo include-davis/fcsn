@@ -30,9 +30,6 @@ def home():
 @app.route("/aboutus",methods=['GET', 'POST'])
 def aboutus():
     return render_template('aboutus.html')
-@app.route("/board",methods=['GET', 'POST'])
-def board():
-    return render_template('board.html')
 @app.route("/contact",methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html')
