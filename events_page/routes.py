@@ -23,7 +23,10 @@ def add_volunteer():
     
     return render_template('add_volunteer.html', title='Add Volunteer', form=form)
 
-@app.route("/home.html", methods=['GET', 'POST']) # Sets event registration as home page
+@app.route("/", methods=['GET', 'POST'])
+def home():
+    return render_template('home.html')
+    
 @app.route("/events", methods=['GET', 'POST'])
 def check_eligibility():
     form = RegisterForm()
