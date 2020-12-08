@@ -131,7 +131,7 @@ h1{
   
   .Rectangle3{
     height: 180px;
-    width: 1440px;
+    width: 100vw;
   
     position: absolute;
     left: 0%;
