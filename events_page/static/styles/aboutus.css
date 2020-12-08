@@ -1,0 +1,336 @@
+.banner {
+    position: relative;
+    left: 66px;
+    top: 58px;
+    padding: 40px;
+    
+}
+
+.mainDiv {
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+    /*margin-bottom: -180px;*/
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.pageLinks {
+    position: absolute;
+    left: 822px;
+    top: 105px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.currentPage {
+    color: orange;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: black; 
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+} 
+
+h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.position {
+    color: #3069D7;
+}
+
+
+.text {
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.smallText {
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #022447;;
+}
+
+.boardMember:hover .overlay {
+    opacity: 0.8;
+}
+
+
+
+p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.boardMember {
+    position: relative;
+    width: 301px;
+    height: 500px;
+}
+
+.profilePic {
+    position: relative;
+    width: 301px;
+    height: 300px;
+}
+/*header*/
+
+div {
+    display: block;
+  }
+
+  
+  .home {
+    position: relative;
+    width: 1440px;
+    height: 262px;
+    background: #FFFFFF;
+  }
+  
+  .nav-bar {
+    position: absolute;
+    width: 1308px;
+    height: 111px;
+    left: 66px;
+    top: 58px;
+  }
+  
+  .Component1 {
+    position: absolute;
+    width: 1308px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .headerImage{
+    position: absolute;
+    width: 425px;
+    height: 118px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .links {
+    position: absolute;
+    left: 57.8%;
+    right: 0.92%;
+    top: 36.72%;
+    bottom: 44.53%;
+  
+    height: 24px;
+    width: 600px;
+    left: 756px;
+    top: 40px;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+  }
+  
+  li{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  a:hover{
+    color: #ED0E06;
+  }
+  
+  
+
+/*footer*/
+.Group_46 {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    left: 0px;
+    /*top: 2284px;*/
+    bottom: 0px;
+  }
+  
+  /*.Group_45 {
+    position: absolute;
+    left: 10.69%;
+    right: 10.69%;
+    top: 25%;
+    bottom: 27.78%;
+  }*/
+  
+  .Frame7{
+    position: absolute;
+    width: 435.38px;
+    height: 85px;
+    left: 850.62px;
+    top: 45px;
+  }
+  
+  .Rectangle3{
+    height: 180px;
+    width: 100%;
+  
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #022447;
+  }
+  
+  .footerText{
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+  
+    position: absolute;
+    left: 10.69%;
+    right: 53.88%;
+    top: 32.22%;
+    bottom: 34.44%;
+  }
+  
+  .Frame8 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+  
+    position: absolute;
+    /*width: 479px;*/
+    height: 75px;
+    left: 807px;
+    top: 50px;
+  }
+  
+  .aggie {
+    position: static;
+    width: 163px;
+    height: 43px;
+    left: 0px;
+    top: 16px;
+  
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+    margin: 83px 0px;
+  }
+  
+  .Instagram{
+    position: static;
+    width: 75px;
+    height: 75px;
+    left: 246px;
+    top: 0px;
+  
+    flex: none;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    margin: 83px;
+  }
+  
+  .Facebook {
+    position: static;
+    width: 75px;
+    height: 75px;
+    left: 404px;
+    top: 0px;
+  
+    flex: none;
+    order: 2;
+    align-self: center;
+    flex-grow: 0;
+    margin: 83px 0px;
+  }
+  
