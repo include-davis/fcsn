@@ -1,10 +1,10 @@
 .Group_46 {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: 1440px;
   height: 180px;
   left: 0px;
-  /*top: 2284px;*/
-  bottom: 0px;
+  /* top: 2884px; */
+  top: 3200px;
 }
 
 /*.Group_45 {
@@ -25,7 +25,7 @@
 
 .Rectangle3{
   height: 180px;
-  width: 100%;
+  width: 1440px;
 
   position: absolute;
   left: 0%;
@@ -35,7 +35,7 @@
   background: #022447;
 }
 
-.footerText{
+.Text{
   color: #FFFFFF;
   font-family: Montserrat;
   font-style: normal;
@@ -57,7 +57,7 @@
   padding: 0px;
 
   position: absolute;
-  /*width: 479px;*/
+  width: 479px;
   height: 75px;
   left: 807px;
   top: 50px;
