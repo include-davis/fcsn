@@ -147,6 +147,7 @@ img{
 }
 .image{
   object-fit: cover;
+  overflow: hidden; 
 }
 /*header*/
 
