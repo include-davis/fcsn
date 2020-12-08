@@ -36,9 +36,9 @@ def board():
 @app.route("/contact",methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html')
-@app.route("/getinvoled",methods=['GET', 'POST'])
+@app.route("/getinvolved",methods=['GET', 'POST'])
 def getinvolved():
-    return render_template('home.html')
+    return render_template('getinvolved.html')
 
 @app.route("/events", methods=['GET', 'POST'])
 def check_eligibility():
