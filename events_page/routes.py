@@ -27,8 +27,18 @@ def add_volunteer():
 @app.route("/home",methods=['GET', 'POST'])
 def home():
     return render_template('home.html')
-
-
+@app.route("/aboutus",methods=['GET', 'POST'])
+def home():
+    return render_template('aboutus.html')
+@app.route("/board",methods=['GET', 'POST'])
+def home():
+    return render_template('board.html')
+@app.route("/contact",methods=['GET', 'POST'])
+def home():
+    return render_template('contact.html')
+@app.route("/getinvoled",methods=['GET', 'POST'])
+def home():
+    return render_template('getinvolved.html')
 
 @app.route("/events", methods=['GET', 'POST'])
 def check_eligibility():
