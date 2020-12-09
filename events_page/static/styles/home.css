@@ -15,7 +15,7 @@ body{
 .logopic{
 	float:left;
 }
-
+/*
 .home {
     position: relative;
     width: 1440px;
@@ -23,13 +23,13 @@ body{
     background: #FFFFFF;
   } 
 
-  .nav-bar {
-    position: absolute;
-    width: 1308px;
-    height: 111px;
-    left: 66px;
-    top: 58px;
-  }
+.nav-bar {
+  position: absolute;
+  width: 1308px;
+  height: 111px;
+  left: 100px;
+  top: 58px;
+}*/
 
 .Component1 {
   position: relative;
@@ -53,10 +53,15 @@ body{
 
 .links {
   position: absolute;
+  left: 57.8%;
+  right: 0.92%;
+  top: 36.72%;
+  bottom: 44.53%;
+
   height: 24px;
-  width: 590px;
-  left: 590px;
-  top: 35px;
+  width: 600px;
+  left: 756px;
+  top: 40px;
 }
 
 
