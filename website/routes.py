@@ -1,9 +1,9 @@
 # Methods managing how each webpage operates
 
 from flask import render_template, url_for, flash, redirect, request
-from events_page import app, db
-from events_page.forms import RegisterForm, AddVolunteerForm # import forms from forms.py
-from events_page.models import Volunteer, Entry
+from website import app, db
+from website.forms import RegisterForm, AddVolunteerForm # import forms from forms.py
+from website.models import Volunteer, Entry
 # from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route("/add-volunteer", methods=['GET', 'POST'])

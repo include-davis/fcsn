@@ -1,6 +1,6 @@
 # Creates classes for databases where their attributes are stored
 
-from events_page import db
+from website import db
 
 # Volunteer class for eligible emails for event registration
 class Volunteer(db.Model):

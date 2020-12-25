@@ -8,4 +8,4 @@ app.config['SQLALCHEMY_BINDS'] = {'valid emails' : 'sqlite:///valid.db'} # Creat
 
 db = SQLAlchemy(app)
 
-from events_page import routes
+from website import routes
