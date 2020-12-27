@@ -110,6 +110,7 @@ p {
   height: 180px;
   margin-top:150px;
   background: #022447;
+  text-align: left;
 }
 .footercontent{
   display:flex;
