@@ -1,80 +1,29 @@
-div {
-  display: block;
-}
-
-.home {
-  position: relative;
-  width: 1440px;
-  height: auto;
-  background: #FFFFFF;
-}
-
+/* NAVBAR */
 .nav-bar {
-  position: absolute;
-  width: 1308px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
   height: 111px;
-  left: 66px;
-  top: 58px;
+  padding-top: 58px;
+  margin:auto;
 }
 
-.Component1 {
-  position: absolute;
-  width: 1308px;
-  height: 128px;
-  left: 0px;
-  top: 0px;
+.logocontainer{
+width: 20vw;
 }
-
-.image{
-  position: absolute;
-  width: 425px;
-  height: 118px;
-  left: 0px;
-  top: 0px;
+.logocontainer img{
+width: 100%;
+height: auto;
+object-fit: cover;
 }
-
-.links {
-  position: absolute;
-  left: 57.8%;
-  right: 0.92%;
-  top: 36.72%;
-  bottom: 44.53%;
-
-  height: 24px;
-  width: 600px;
-  left: 756px;
-  top: 40px;
-}
-
-body {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-li{
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-ul {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: white;
+a.navbutton {
+color: #000000;
+text-align: center;
+padding-left: 20px;
+text-decoration: none;
 }
 
 a:hover{
-  color: #ED0E06;
+color: #ED0E06;
 }

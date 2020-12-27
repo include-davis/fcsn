@@ -12,24 +12,17 @@
     </head>
 
     <body>
-        <!-- Navigation Bar -->
-        <div class= "home">
-            <div class= "nav-bar">
-                <div class= "Component1">
-                    <div class= "image">
-                      <img src= "{{ url_for('static', filename='fcsndavislogo (fb banner) 2.png') }}" alt="FCSN Davis Logo" >
-                    </div>
-                    <div class= "links">
-                      <ul>
-                        <li><a href = "/home">Home</a></li>
-                        <li><a href = "/aboutus">About Us</a></li>
-                        <li><a href = "/events">Events</a></li>
-                        <li><a href = "/getinvolved">Get Involved</a></li>
-                        <li><a href = "/contact">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-            </div>  
+        <div class= "nav-bar">
+            <div class="logocontainer">
+                <img src= "../static/images/fcsndavislogo (fb banner) 2.png" alt="FCSN Davis Logo" > 
+            </div>
+            <div class= "links">
+                <a class="navbutton" href = "/home">Home</a>
+                <a class="navbutton" href = "/aboutus">About Us</a>
+                <a class="navbutton" href = "/events">Events</a>
+                <a class="navbutton" href = "/getinvolved">Get Involved</a>
+                <a class="navbutton" href = "/contact">Contact</a>
+            </div>
         </div>
 
         <h1>Events</h1>
