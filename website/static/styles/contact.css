@@ -1,3 +1,8 @@
+
+.footer{
+  display:none;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     margin:auto;
@@ -20,6 +25,7 @@ h1{
     height: 111px;
     padding-top: 58px;
     margin:auto;
+    bottom:0;
 }
   
 .logocontainer{
@@ -74,38 +80,40 @@ a:hover{
 }
 
 /* FOOTER */
-.footer {
-  position: relative;
-  display:flex;
-  align-items: center;
-  width: 100vw;
-  height: 180px;
-  background: #022447;
-}
-.footercontent{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80vw;
-  margin:auto;
-}
-.footertext{
-  color: #FFFFFF;
-  font-family: Montserrat;
-  font-weight:600;
-  font-size: 25px;
-}
-.footericons{
-  display:flex;
-  flex-direction: row;
-}
-.footericon{
-  text-align:center;
-  align-self:center;
-  padding-left:2vw;
-  padding-right:2vw;
-}
-.footerimg{
-  align-self:center;
+@media screen and (min-width: 1050px) {
+  .footer {
+    position: relative;
+    display:flex;
+    align-items: center;
+    width: 100vw;
+    height: 180px;
+    background: #022447;
+  }
+  .footercontent{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin:auto;
+  }
+  .footertext{
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight:600;
+    font-size: 25px;
+  }
+  .footericons{
+    display:flex;
+    flex-direction: row;
+  }
+  .footericon{
+    text-align:center;
+    align-self:center;
+    padding-left:2vw;
+    padding-right:2vw;
+  }
+  .footerimg{
+    align-self:center;
+  }
 }
