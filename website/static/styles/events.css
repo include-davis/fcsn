@@ -33,6 +33,8 @@ h2{
   display:flex;
   flex-direction: row;
   justify-content: start;
+  flex-shrink: 3;
+  margin:auto;
 }
 .description{
   display:flex;
