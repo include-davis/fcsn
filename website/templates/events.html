@@ -5,10 +5,7 @@
         <meta charset = "utf-8">
         <title>FCSN Events</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href={{ url_for('static',filename='styles/FCSNnavbar.css') }}>
-        <link rel="stylesheet" href={{ url_for('static',filename='styles/FCSNfooter.css') }}>
-        <link rel="stylesheet" href={{ url_for('static',filename='styles/eventsstyle.css') }}>
-<!--        <link rel="stylesheet" href="../static/style.css">-->
+        <link rel="stylesheet" href="../static/styles/events.css">
     </head>
 
     <body>
@@ -25,67 +22,8 @@
             </div>
         </div>
 
-        <h1>Events</h1>
-
-        <!-- Upcoming Events -->
-        <h2 style="top: 417px">Upcoming Events</h2>
-        
-        <div class="upcoming-events">
-            <img src="../static/images/FCSN After School Program Flyer.jpg" style="top: 512px;">
-            <p style="top:586px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-            <a href="#" id="button" style="top: 779px" class="sign-up-button">Check Eligibility</a>
-        </div>
-                
-        <!-- Past Events -->
-        <h2 style="top: 993px">Past Events</h2>
-
-        <div class="past-events">
-            <img src="../static/images/fcsn davis first meeting.png" style="top: 1088px;">
-            <p style="top: 1166px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-            varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-        </div>
-
-        <div class="past-events">
-            <img src="../static/images/fcsn davis 2nd meeting.png" style="top: 1461px;">
-            <p style="top: 1540px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-        </div>
-
-        <div class="past-events">
-            <img src="../static/images/game night social.jpg" style="top: 1834px;">
-            <p style="top: 1936px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-        </div>
-
-        <div class="past-events">
-            <img src="../static/images/FCSN Volunteer Training Instagram Post.png" style="top: 2300px">
-            <p style="top: 2379px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-        </div>
-
-        <div class="past-events">
-            <img src="../static/images/FCSN Thanksgiving After School Club Flyer.jpg" style="top: 2673px">
-            <p style="top: 2766px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
-                varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
-        </div>
-
-        <!-- Messages about eligibility or ineligibility -->
-        <div class="message">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                    <!-- Displays message confirming eligibility or ineligibility -->
-                    <div id="message">
-                    {% for category, message in messages %}
-                        <p><span style="color: red; font-size: 20px;">{{ category }}<br></span> {{ message }}</p>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-            {% endwith %}
-        </div>  
-
-        <!-- Popup for email form -->
-        <div class="email-popup">
+         <!-- Popup for email form -->
+         <div class="email-popup">
             <div class="popup-content">
                 <!-- Closes the popup -->
                 <div class="close">+</div>
@@ -97,21 +35,94 @@
                 </form>
             </div>
         </div>
+        <div class="eventsbody">
+            <!-- Messages about eligibility or ineligibility -->
+            <div class="message">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <!-- Displays message confirming eligibility or ineligibility -->
+                        <div id="messagecontent">
+                        {% for category, message in messages %}
+                            <p><span style="color: red; font-size: 20px;">{{ category }}<br></span> {{ message }}</p>
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+            </div>  
+            <h1>Events</h1>
+            <!-- Upcoming Events -->
+            <h2>Upcoming Events</h2>
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/FCSN After School Program Flyer.jpg">
+                <div class="description">
+                    <p style="top:586px"><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                    <a href="#" id="button" style="top: 779px" class="sign-up-button">Check Eligibility</a>
+                </div>
+            </div>
+                    
+            <!-- Past Events -->
+            <h2>Past Events</h2>
 
-        <!-- Message if user doesn't enter valid email -->
-        <div class="error-message">
-            <p><span style="color: red; font-weight: 600; font-size: 25px; line-height: 30px;">Email Invalid<br></span>Please enter a valid email address.</p>
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/fcsn davis first meeting.png">
+                <div class="description">
+                    <p><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                </div>
+            </div>
+
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/fcsn davis 2nd meeting.png">
+                <div class="description">
+                    <p><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                </div>
+            </div>
+
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/game night social.jpg">
+                <div class="description">
+                    <p><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                </div>
+            </div>
+
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/FCSN Volunteer Training Instagram Post.png">
+                <div class="description">
+                    <p><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                </div>
+            </div>
+
+            <div class="eventcontainer">
+                <img class="flier" src="../static/images/FCSN Thanksgiving After School Club Flyer.jpg">
+                <div class="description">
+                    <p><span style="font-size: 24px;">DATE, LOCATION</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec ultricies pellentesque fermentum elit 
+                        varius velit pellentesque lectus. Volutpat dictum quis enim, egestas diam viverra integer viverra id.</p>
+                </div>
+            </div>
+
+            
+
+           
+
+            <!-- Message if user doesn't enter valid email -->
+            <div class="error-message">
+                <p><span style="color: red; font-weight: 600; font-size: 25px; line-height: 30px;">Email Invalid<br></span>Please enter a valid email address.</p>
+            </div>
         </div>
 
         <!-- footer -->
-        <div class="Group_46">
-            <div class= "Rectangle3"></div>
-            <div class = "Text">Friends of Children with Special Needs @ UC Davis</div>
-            <div class = "Frame7"></div>
-            <div class= "Frame8">
-                <a class="aggie" href="https://aggielife.ucdavis.edu/organization/fcsndavis"><img src="../static/image 3.png"></a>
-                <a class="Instagram" href="https://www.instagram.com/fcsndavis/"><img src="../static/image 2.png" alt="Instagram Logo"></a>
-                <a class="Facebook" href="https://www.facebook.com/groups/fcsndavis"><img src="../static/image 1.png"></a>
+        <div class="footer">
+            <div class ="footercontent">
+                <div class = "footertext">Friends of Children with Special Needs @ UC Davis</div>
+                <div class= "footericons">
+                    <div class="footericon"><a href="https://aggielife.ucdavis.edu/organization/fcsndavis"><img class = "footerimg" src="../static/image 3.png"></a></div>
+                    <div class="footericon"><a href="https://www.instagram.com/fcsndavis/"><img class = "footerimg" src="../static/image 2.png"></a></div>
+                    <div class="footericon"><a href="https://www.facebook.com/groups/fcsndavis"><img class = "footerimg" src="../static/image 1.png"></a></div>
+                </div>
             </div>
         </div>
     </body>

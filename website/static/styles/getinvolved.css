@@ -18,7 +18,7 @@ h1{
 
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 48px;
     line-height: 59px;
 
@@ -79,11 +79,8 @@ button {
     /* width: 994px; */
     height: 649px;
     display: flex;
-    justify-self: center;
-    /* left: 223px;
-    top: 1022px; */
-
-    background: #E3E3E3;
+    justify-content: center;
+    margin-bottom:100px;
 }
 
 h2{
