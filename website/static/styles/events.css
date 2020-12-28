@@ -11,6 +11,7 @@ body {
 }
 .flier{
   width: 20vw;
+  height:auto;
 }
 h1{
   font-weight: 600;
