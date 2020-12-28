@@ -52,8 +52,8 @@ a:hover{
 
 .contactbody{
   margin:auto;
-  margin-left: 200px;
-  margin-right: 200px;
+  width:80vw;
+  margin:auto;
   
   display: flex;
   flex-direction: column;

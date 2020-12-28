@@ -5,8 +5,8 @@ body{
 
 .get_involved {
     position: relative;
-    margin-left: 200px;
-    margin-right: 200px;
+    width:80vw;
+    margin:auto;
 }
 
 h1{

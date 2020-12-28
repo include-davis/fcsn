@@ -13,9 +13,8 @@ body{
 
 .mainDiv {
     position: relative;
-    margin-left: 200px;
-    margin-right: 200px;
-    /*margin-bottom: -180px;*/
+    width:80vw;
+    margin:auto;
 }
 .boardMember{
   padding-left:20px;
