@@ -49,7 +49,7 @@ def check_eligibility():
 
         # Displays confirmation message
         if email:
-            flash('You are eligible to register for this event. Sign up here: https://www.google.com/', 'Success')
+            flash('You are eligible to register for this event., 'Success')
 
         else:
             invalid_email = Entry.query.filter_by(email=form.email.data).first()
