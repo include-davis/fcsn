@@ -1,1 +1,112 @@
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Parents</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/styles/events.css">
+    </head>
+
+    <body>
+        <div class= "nav-bar">
+            <div class="logocontainer">
+                <img src= "../static/images/fcsndavislogo (fb banner) 2.png" alt="FCSN Davis Logo" > 
+            </div>
+            <div class= "links">
+                <a class="navbutton" href = "/home">Home</a>
+                <a class="navbutton" href = "/aboutus">About Us</a>
+                <a class="navbutton" href = "/events">Events</a>
+                <a class="navbutton" href = "/getinvolved">Get Involved</a>
+                <a class="navbutton" href = "/parents">For Parents</a>                
+                <a class="navbutton" href = "/contact">Contact</a>
+            </div>
+       </div>
+      
+            <!-- Upcoming Events -->
+            <h2>Upcoming Events</h2>
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/tutoring - erica.png"></div>
+                <div class="description">
+                    <p style="top:586px"><span style="font-size: 24px;">1-on-1 Virtual Tutoring</span><br><br>Flexible date & time, via Zoom</span><br><br>*No longer accepting new volunteer sign-ups* These classes are largely informal (and also completely free) with the main goal being to create friendships during these difficult times. Classes are 1 hour long, once per week, and will be held online(all other information is also attached on the flyer). You can find a description of the classes on this document: <a href="https://tinyurl.com/y2gzwf6v">https://tinyurl.com/y2gzwf6v</a></p>
+                    <a href="#" class="register_for_event">Register</a>
+                            <!-- Change href="" to link to the right google form for event sign up -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezjyEY0VXGpSzwyaA0OOHeVHAqmpfMN99q4XVkuWJqVHTbWQ/viewform?usp=sf_link" class="sign-up-button">Register</a>
+                </div>
+            </div>            
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/wasp - erica.png"></div>
+                <div class="description">
+                    <p style="top:586px"><span style="font-size: 24px;">Winter After School Program</span><br><br>Tuesdays January 5, 12, 19, 2021 via Zoom</span><br><br>*No longer accepting new volunteer sign-ups* volunteering activity. Play online games and activities with children with special needs! Some games include Skribbl.io, Codenames, Reverse pictionary, Charades, and Simon Says. Volunteer training required.</p>
+                    <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            {% if category == "Success" %}
+                            <!-- Change href="" to link to the right google form for event sign up -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePdYyrpUSMdQ3NH6kzLB2XeWsn_zMX6SVGRg0WHhXCPaJ3_Q/viewform?usp=sf_link" class="sign-up-button">Register</a>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+                    
+            <!-- Past Events -->
+            <h2>Past Events</h2>
+
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/tasp - erica.png"></div>
+                <div class="description">
+                    <p><span style="font-size: 24px;">Thanksgiving After School Program</span><br><br>November 24-25, 2020 3:15pm</span><br><br>Virtual volunteering activity. Play online games and activities with children with special needs! Some games include Skribbl.io, Codenames, Reverse pictionary, Charades, and Simon Says. Volunteer training required. </p>
+                </div>
+            </div>       
+
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/fcsn davis 2nd meeting.png"></div>
+                <div class="description">
+                    <p><span style="font-size: 24px;">2nd General Meeting</span><br><br>November 10, 2020 8pm</span><br><br>We will be introducing new volunteering events. All majors welcome, no registration needed.</p>
+                </div>
+            </div>
+
+             <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/FCSN Volunteer Training Instagram Post.png"></div> 
+                <div class="description">
+                    <p><span style="font-size: 24px;">FCSN Volunteer Training</span><br><br>October 31, 2020 1pm</span><br><br>Volunteers are required to attend this training before participating in volunteering events. Our trainings are held by the parent organization FCSN. They do not hold trainings very often so be sure not to miss this opportunity!</p>
+                </div>
+            </div>            
+               
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/among us - erica.png"></div>
+                <div class="description">
+                    <p><span style="font-size: 24px;">Game Night Social</span><br><br>October 25, 2020 8pm</span><br><br>A great opportunity for club members to meet each other and the board members! Come play Among Us with us! Who's the imposter?</p>
+                </div>
+            </div>
+
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/fcsn davis first meeting.png"></div>
+                <div class="description">
+                    <p><span style="font-size: 24px;">1st General Meeting</span><br><br>October 6, 2020 8pm</span><br><br>Join us for our first ever general meeting at UC Davis! We will be introducing board members and speaking about our upcoming volunteering events. All majors welcome, no registration needed.</p>
+                </div>
+            </div>
+           
+
+            <!-- Message if user doesn't enter valid email -->
+            <div class="error-message">
+                <p><span style="color: red; font-weight: 600; font-size: 25px; line-height: 30px;">Email Invalid<br></span>Please enter a valid email address.</p>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class ="footercontent">
+                <div class = "footertext">Friends of Children with Special Needs @ UC Davis</div>
+                <div class= "footericons">
+                    <div class="footericon"><a href="https://aggielife.ucdavis.edu/organization/fcsndavis"><img class = "footerimg" src="../static/image 3.png"></a></div>
+                    <div class="footericon"><a href="https://www.instagram.com/fcsndavis/"><img class = "footerimg" src="../static/image 2.png"></a></div>
+                    <div class="footericon"><a href="https://www.facebook.com/groups/fcsndavis"><img class = "footerimg" src="../static/image 1.png"></a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
