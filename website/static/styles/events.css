@@ -185,6 +185,9 @@ text-decoration: none;
 a:hover{
 color: #ED0E06;
 }
+.sign-up-button:hover{
+    color:white;
+}
 
 /* FOOTER */
 .footer {
