@@ -57,9 +57,11 @@
                 <div class="description">
                     <p style="top:586px"><span style="font-size: 24px;">1-on-1 Virtual Tutoring</span><br><br>Flexible date & time, via Zoom</span><br><br>Virtual volunteering activity. Teach the subject of your choice to children with special needs. Tutoring times are flexible. Volunteer training required.</p>
                     <a href="#" class="sign-up-button">Check Eligibility</a>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
                         <a href="https://www.google.com/" class="sign-up-button">Register</a>
                     {% endif %}
+                    {% endwith %}
                 </div>
             </div>            
             <div class="eventcontainer">
@@ -67,9 +69,11 @@
                 <div class="description">
                     <p style="top:586px"><span style="font-size: 24px;">Winter After School Program</span><br><br>Tuesdays January 5, 12, 19, 2021 via Zoom</span><br><br>Virtual volunteering activity. Play online games and activities with children with special needs! Some games include Skribbl.io, Codenames, Reverse pictionary, Charades, and Simon Says. Volunteer training required.</p>
                     <a href="#" class="sign-up-button">Check Eligibility</a>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
                         <a href="https://www.google.com/" class="sign-up-button">Register</a>
                     {% endif %}
+                    {% endwith %}
                 </div>
             </div>
                     
