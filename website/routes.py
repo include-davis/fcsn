@@ -37,6 +37,9 @@ def contact():
 @app.route("/getinvolved",methods=['GET', 'POST'])
 def getinvolved():
     return render_template('getinvolved.html')
+@app.route("/parents",methods=['GET', 'POST'])
+def parents():
+    return render_template('parents.html')
 
 @app.route("/events", methods=['GET', 'POST'])
 def check_eligibility():
