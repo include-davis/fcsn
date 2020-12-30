@@ -64,6 +64,7 @@ h2{
     cursor: pointer;
     text-decoration: none!important;
     color: #000000;
+    margin-top: 20px;
 }
 
 /* Popup for email form */
