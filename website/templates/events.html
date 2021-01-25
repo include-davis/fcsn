@@ -56,7 +56,7 @@
             <div class="eventcontainer">
                 <div class="fliercontainer"><img class="flier" src="../static/images/tutoring - erica.png"></div>
                 <div class="description">
-                    <p style="top:586px"><span style="font-size: 24px;">1-on-1 Virtual Tutoring</span><br><br>Flexible date & time, via Zoom</span><br><br>Virtual volunteering activity. Teach the subject of your choice to children with special needs. Tutoring times are flexible. Volunteer training required.</p>
+                    <p style="top:586px"><span style="font-size: 24px;">1-on-1 Virtual Tutoring</span><br><br>*No longer accepting new volunteer sign-ups* Flexible date & time, via Zoom</span><br><br>Virtual volunteering activity. Teach the subject of your choice to children with special needs. Tutoring times are flexible. Volunteer training required.</p>
                     <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
                     {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
@@ -69,27 +69,16 @@
                     {% endif %}
                     {% endwith %}
                 </div>
-            </div>            
-            <div class="eventcontainer">
-                <div class="fliercontainer"><img class="flier" src="../static/images/wasp - erica.png"></div>
-                <div class="description">
-                    <p style="top:586px"><span style="font-size: 24px;">Winter After School Program</span><br><br>Tuesdays January 5, 12, 19, 2021 via Zoom</span><br><br>*No longer accepting new volunteer sign-ups* volunteering activity. Play online games and activities with children with special needs! Some games include Skribbl.io, Codenames, Reverse pictionary, Charades, and Simon Says. Volunteer training required.</p>
-                    <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
-                    {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                            {% if category == "Success" %}
-                            <!-- Change href="" to link to the right google form for event sign up -->
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePdYyrpUSMdQ3NH6kzLB2XeWsn_zMX6SVGRg0WHhXCPaJ3_Q/viewform?usp=sf_link" class="sign-up-button">Register</a>
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %}
-                    {% endwith %}
-                </div>
-            </div>
+            </div>           
                     
             <!-- Past Events -->
             <h2>Past Events</h2>
+            <div class="eventcontainer">
+                <div class="fliercontainer"><img class="flier" src="../static/images/wasp - erica.png"></div>
+                <div class="description">
+                    <p><span style="font-size: 24px;">Winter After School Program</span><br><br>Tuesdays January 5, 12, 19, 2021 via Zoom</span><br><br>Virtual volunteering activity. Play online games and activities with children with special needs! Some games include Skribbl.io, Codenames, Reverse pictionary, Charades, and Simon Says. Volunteer training required.</p>
+                </div>
+            </div>       
 
             <div class="eventcontainer">
                 <div class="fliercontainer"><img class="flier" src="../static/images/tasp - erica.png"></div>
