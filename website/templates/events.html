@@ -38,10 +38,11 @@
         </div>
         <div class="eventsbody">
             <!-- Messages about eligibility or ineligibility -->
+            <!--
             <div class="message">
                 {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
-                        <!-- Displays message confirming eligibility or ineligibility -->
+                        Displays message confirming eligibility or ineligibility 
                         <div id="messagecontent">
                         {% for category, message in messages %}
                             <p><span style="color: red; font-size: 20px;">{{ category }}<br></span> {{ message }}</p>
@@ -49,7 +50,7 @@
                         </div>
                     {% endif %}
                 {% endwith %}
-            </div>  
+            </div>  -->
             <h1>Events</h1>
             <!-- Upcoming Events -->
             <h2>Upcoming Events</h2>
@@ -57,9 +58,10 @@
                 <div class="fliercontainer"><img class="flier" src="../static/images/abacus.png"></div>
                 <div class="description">
                     <p style="top:586px"><span style="font-size: 24px;">Virtual Abacus Class</span><br><br>Virtual volunteering activity organized by the FCSN parent organization. Teach abacus to a small group of FCSN students as an enrichment program. Volunteer training required. Please email the coordinator Penny pennysfcsn.org for more details.</p>
-                    <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
+                    <a class="eligibilitybutton sign-up-button" href = "https://www.google.com">Check Eligibility</a>
+                    <!-- <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
                     {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% endwith %}
+                    {% endwith %} -->
                 </div>
             </div> 
             
@@ -111,16 +113,20 @@
                 </div>
             </div>
             
+            
                    <div class="eventcontainer">
                 <div class="fliercontainer"><img class="flier" src="../static/images/tutoring - erica.png"></div>
                 <div class="description">
                     <p style="top:586px"><span style="font-size: 24px;">1-on-1 Virtual Tutoring</span><br><br>*No longer accepting new volunteer sign-ups* Flexible date & time, via Zoom</span><br><br>Virtual volunteering activity. Teach the subject of your choice to children with special needs. Tutoring times are flexible. Volunteer training required.</p>
+                    <a class="eligibilitybutton sign-up-button" href = "https://forms.gle/P5rp4Xk1d1AJtcHt8">Check Eligibility</a>
+
+        <!--    
                     <a href="#" class="eligibilitybutton sign-up-button">Check Eligibility</a>
                     {% with messages = get_flashed_messages(with_categories=true) %}
                     {% if messages %}
                         {% for category, message in messages %}
                             {% if category == "Success" %}
-                            <!-- Change href="" to link to the right google form for event sign up -->
+                             Change href="" to link to the right google form for event sign up 
                             <a href="https://forms.gle/P5rp4Xk1d1AJtcHt8" class="sign-up-button">Register</a>
                             {% endif %}
                         {% endfor %}
@@ -128,7 +134,7 @@
                     {% endwith %}
                 </div>
             </div>           
-                    
+        -->
             <!-- Past Events -->
             <h2>Past Events</h2>
             <div class="eventcontainer">
