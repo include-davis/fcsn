@@ -13,6 +13,11 @@ body{
   width: 50vw;
 }
 
+.homebackground{
+    background: url(/static/styles/leaves.jpg);
+}
+
+
 /* NAVBAR */
 .nav-bar {
   display: flex;
