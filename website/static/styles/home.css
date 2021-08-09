@@ -14,7 +14,7 @@ body{
 }
 
 .homebackground{
-    background: url(/website/static/styles/leaves.jpg);
+    background-image: url(/website/static/styles/leaves.jpg);
 }
 
 
