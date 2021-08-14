@@ -6,6 +6,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin:auto;
+    background: linear-gradient(aliceblue, #79b5ff);
 }
 h1{
   font-family: "Montserrat", sans-serif;
