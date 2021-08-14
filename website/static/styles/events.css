@@ -4,6 +4,7 @@ body {
     font-style: normal;
     margin:auto;
     color: #000000;
+    background: linear-gradient(aliceblue, #79b5ff);
 }
 .eventsbody{
   width:80vw;
